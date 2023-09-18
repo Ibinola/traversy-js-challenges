@@ -7,10 +7,10 @@ function reverseString(string) {
 
 
     while (start < end) {
-        [reverseString[start], reverseString[end]] = [reverseString[end], reverseString[start]]
-        // let temp = str[start];
-        // str[start] = str[end];
-        // str[end] = temp;
+        // [reverseString[start], reverseString[end]] = [reverseString[end], reverseString[start]]
+        let temp = reverseString[start];
+        reverseString[start] = reverseString[end];
+        reverseString[end] = temp;
         start++;
         end--;
     }
